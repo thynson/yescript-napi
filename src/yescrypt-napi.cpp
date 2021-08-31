@@ -63,7 +63,7 @@ public:
   }
 
   void OnOK() override {
-    Callback().Call({Env().Undefined(), Napi::ArrayBuffer::New(Env(), output.data(), output.size())});
+    Callback().Call({Env().Undefined(), Napi::Buffer<std::uint8_t>::New(Env(), output.data(), output.size())});
   }
 
 private:

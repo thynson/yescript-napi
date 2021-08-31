@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "node-gyp build"
+    "prepare": "node-gyp build",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +15,7 @@
   },
   "devDependencies": {
     "node-gyp": "^8.2.0",
-    "node-addon-api": "^4.1.0"
+    "node-addon-api": "^4.1.0",
+    "jest": "^27.1.0"
   }
 }
