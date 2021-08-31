@@ -79,7 +79,6 @@ private:
 };
 
 
-// yescript (password,
 static Napi::Value Method(const Napi::CallbackInfo &info)
 {
 
