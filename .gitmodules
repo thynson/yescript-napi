@@ -1,0 +1,3 @@
+[submodule "deps/yescrypt"]
+	path = deps/yescrypt
+	url = https://github.com/openwall/yescrypt.git
