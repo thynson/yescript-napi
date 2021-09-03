@@ -4,10 +4,10 @@ jest.setTimeout(300000);
 
 test('Yescrypt', async () => {
 
-    expect((await yescrypt(Buffer.from('p'), Buffer.from('s'), 16, 8, 1, 0, 0, 16, YESCRYPT_RW)).toString('hex')).toBe(
+    expect((await yescrypt(Buffer.from('p'), Buffer.from('s'), 16, 8, 1, 0, 0, 16)).toString('hex')).toBe(
         'c8c7ff1122b0b291c3f2608948782cd6',
     );
-    expect((await yescrypt(Buffer.from('p'), Buffer.from('s'), 16, 8, 4, 0, 0, 16, YESCRYPT_RW)).toString('hex')).toBe(
+    expect((await yescrypt(Buffer.from('p'), Buffer.from('s'), 16, 8, 4, 0, 0, 16)).toString('hex')).toBe(
         'e2ad06a9340816659d45e0dd3d8260a6',
     );
 
